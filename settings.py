@@ -118,8 +118,12 @@ INSTALLED_APPS = (
     "django.contrib.sites",
     "survey",
     "bootstrapform",
-    "rosetta",
 )
+from pathlib import Path
+
+CSV_DIRECTORY = Path("csv") # Define the directory where csv are exported
+TEX_DIRECTORY = Path("tex") # Define the directory where tex files and pdf are exported
+
 
 DEFAULT_AUTO_FIELD = "django.db.models.AutoField"
 
